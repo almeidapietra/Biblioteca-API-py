@@ -1,4 +1,5 @@
 # Biblioteca API
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/almeidapietra/Biblioteca-API-py/blob/main/LICENSE)
 
 Este projeto é uma API para gerenciar uma biblioteca, desenvolvida como atividade da Residência de Software do GOV BA + CEPEDI. A API permite realizar operações CRUD (Criar, Ler, Atualizar e Excluir) para livros, autores e categorias.
 
