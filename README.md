@@ -100,6 +100,7 @@ Use o `coverage.py` para verificar a cobertura de código:
 coverage run manage.py test
 coverage report
 coverage html
+```
 
 Nota: A pasta htmlcov está versionada no repositório apenas para facilitar a correção.
 
