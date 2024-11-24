@@ -61,7 +61,7 @@ Configuração de **django-cors-headers** para permitir que clientes externos co
     ```bash
     python manage.py runserver
     ```
-    A API estará disponível em [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+    A API estará disponível em [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin).
 
 ## Endpoints da API
 
