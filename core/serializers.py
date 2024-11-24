@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Categoria, Autor, Livro
+from .models import Categoria, Autor, Livro, Colecao
 
 class CategoriaSerializer(serializers.ModelSerializer):
     class Meta:
@@ -18,3 +18,11 @@ class LivroSerializer(serializers.ModelSerializer):
     class Meta:
         model = Livro
         fields = ['id', 'titulo', 'autor', 'categoria', 'publicado_em']
+
+class ColecaoSerializer(serializers.ModelSerializer):
+    livros = serializers.PrimaryKeyRelatedField(many=True, queryset=Livro.objects.all())
+    colecionador = serializers.HiddenField(default=serializers.CurrentUserDefault())
+
+    class Meta:
+        model = Colecao
+        fields = ['id', 'nome', 'descricao', 'livros', 'colecionador']
